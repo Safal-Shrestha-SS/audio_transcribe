@@ -1,0 +1,32 @@
+name: audio_transcribe
+description: My new Flutter plugin
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        default_package: audio_transcribe_android
+      ios:
+        default_package: audio_transcribe_ios
+
+dependencies:
+  flutter:
+    sdk: flutter
+  audio_transcribe_android:
+    path: ../audio_transcribe_android
+  audio_transcribe_ios:
+    path: ../audio_transcribe_ios
+  audio_transcribe_platform_interface:
+    path: ../audio_transcribe_platform_interface
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mocktail: ^1.0.0
+  plugin_platform_interface: ^2.1.6
+  very_good_analysis: ^5.1.0
