@@ -20,7 +20,7 @@ class MethodChannelAudioTranscribe extends AudioTranscribePlatform {
   
   @override
   Future<void> startListening() {
-    return methodChannel.invokeMethod<String>('gstartListeningetAudioText');
+    return methodChannel.invokeMethod<String>('startListeningetAudioText');
   }
   
   @override
