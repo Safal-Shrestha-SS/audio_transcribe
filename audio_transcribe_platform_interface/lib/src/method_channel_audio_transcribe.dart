@@ -17,12 +17,12 @@ class MethodChannelAudioTranscribe extends AudioTranscribePlatform {
   Future<String?> getAudioText() {
     return methodChannel.invokeMethod<String>('getAudioText');
   }
-  
+
   @override
   Future<void> startListening() {
     return methodChannel.invokeMethod<String>('startListeningetAudioText');
   }
-  
+
   @override
   Future<void> stopListening() {
     return methodChannel.invokeMethod<String>('stopListening');

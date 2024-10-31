@@ -24,12 +24,12 @@ class AudioTranscribeAndroid extends AudioTranscribePlatform {
   }
 
   @override
-  Future<void> startListening() async{
+  Future<void> startListening() async {
     return methodChannel.invokeMethod<void>('startListening');
   }
 
   @override
-  Future<void> stopListening() async{
-   return methodChannel.invokeMethod<void>('stopListening');
+  Future<void> stopListening() async {
+    return methodChannel.invokeMethod<void>('stopListening');
   }
 }
