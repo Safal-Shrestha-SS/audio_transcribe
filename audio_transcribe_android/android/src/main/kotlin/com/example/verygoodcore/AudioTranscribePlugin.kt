@@ -100,7 +100,7 @@ class AudioTranscribePlugin : FlutterPlugin, MethodCallHandler, ActivityAware,
                 hasRecordPermission()
                 try {
                     speechRecognizer!!.startListening(speechRecognizerIntent)
-                }catch (e:Exception){
+                } catch (e: Exception) {
                     Log.d("Flutter", "startListening ${e.message}")
                 }
                 Log.d("Flutter", "getAudioText start")

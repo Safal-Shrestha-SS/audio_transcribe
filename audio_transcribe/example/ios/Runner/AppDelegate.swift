@@ -1,35 +1,19 @@
-import UIKit
 import Flutter
 import Speech
+import UIKit
 
-@UIApplicationMain
+@main
 @objc class AppDelegate: FlutterAppDelegate {
-  override func application(
-    _ application: UIApplication,
-    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
-  ) -> Bool {
-      GeneratedPluginRegistrant.register(with: self)
-    return super.application(application, didFinishLaunchingWithOptions: launchOptions)
-  }
+    override func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+    ) -> Bool {
+        GeneratedPluginRegistrant.register(with: self)
+        return super.application(application, didFinishLaunchingWithOptions: launchOptions)
+    }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//public class SwiftSpeechRecognitionPlugin: NSObject, FlutterPlugin {
+// public class SwiftSpeechRecognitionPlugin: NSObject, FlutterPlugin {
 //    private var speechRecognizer: SFSpeechRecognizer?
 //    private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
 //    private var recognitionTask: SFSpeechRecognitionTask?
@@ -109,4 +93,4 @@ import Speech
 //            request.endAudio()
 //        }
 //    }
-//}
+// }

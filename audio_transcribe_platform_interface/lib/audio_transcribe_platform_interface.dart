@@ -31,12 +31,13 @@ abstract class AudioTranscribePlatform extends PlatformInterface {
   /// Return the current platform name.
   Future<String?> getPlatformName();
 
-    /// Return the current platform name.
+  // Added methods after creating the plugin
+  /// Return the current platform name.
   Future<String?> getAudioText();
 
   /// Return the current platform name.
   Future<void> startListening();
 
-   /// Return the current platform name.
+  /// Return the current platform name.
   Future<void> stopListening();
 }
